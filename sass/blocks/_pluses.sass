@@ -1,0 +1,40 @@
+.pluses
+    text-align: center
+    background-color: $secondary
+.items-wrapper
+    display: flex
+.items-col
+    display: inline-block
+    text-align: left
+.item
+    margin: 15px 10px
+    display: flex
+    align-items: center
+    &:hover
+        .plus-icon
+            background-color: $secondary
+            &-l
+                background-color: $primary
+.plus-icon
+    position: relative
+    display: block
+    flex-shrink: 0
+    width: 32px
+    height: 32px
+    background-color: $primary
+    margin-right: 10px
+    &-l
+        position: absolute
+        display: inline-block
+        width: 20px
+        height: 5px
+        background-color: #fff
+        top: 14px
+        left: 6px
+    .vertical
+        transform: rotate(90deg)
+
+@media (max-width: 400px)
+    .items-wrapper
+        flex-direction: column
+

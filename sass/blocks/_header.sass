@@ -1,0 +1,61 @@
+.header
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    background: $primary
+    color: #ffffff
+    &__descr
+        margin-right: 50px
+        flex-shrink: 0
+    &__image
+        // flex-shrink: 1
+        img
+            height: 100%
+            width: 100%
+
+
+    .product-name
+        font-size: 3rem
+        font-weight: 400
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3)
+        margin-top: 0
+    .info
+        list-style: none
+        padding: 0
+        &__check
+            display: inline-block
+            width: 20px
+            height: 10px
+            border-left: 3px solid #fff
+            border-bottom: 3px solid #fff
+            transform: rotate(-45deg)
+            vertical-align: top
+            margin-right: 10px
+        &__item
+            display: inline-block
+            vertical-align: middle
+            margin: 5px 0
+
+            
+@media (max-width: 800px)
+    .header
+        flex-direction: column
+        &__descr
+            margin-right: 0
+        &__image
+
+@media (max-width: 530px)
+    .header
+            
+        .info
+            &__check
+                width: 10px
+                height: 5px
+                margin-right: 5px
+
+@media (max-width: 400px)
+    .header
+            
+        .info
+            &__check
+                display: none
